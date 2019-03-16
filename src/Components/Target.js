@@ -4,7 +4,7 @@ import './target.css';
 
 class Target extends Component{
     render(){
-        const { isOver, canDrop, connectDropTarget, droppedItem } = this.props;
+        const { isOver, canDrop, connectDropTarget, droppedItem, id } = this.props;
         let className = "";
         if(isOver && canDrop){
             className = 'green';
@@ -13,10 +13,12 @@ class Target extends Component{
         }else if(isOver && !canDrop){
             className = 'red'
         }
-        console.log(droppedItem)
+
+        const name = droppedItem[id] === undefined ? '❖' : droppedItem[id]
+
         return connectDropTarget(
             <div className={`target ${className}`}>
-                { droppedItem && droppedItem.id }
+                { name }
             </div>
         )
     }
@@ -25,7 +27,7 @@ class Target extends Component{
 const spec = {
     drop(props, monitor, component){
         const item = monitor.getItem()
-        props.onDrop(item)
+        props.onDrop({item: item.id, id: props.id})
     }
 }
 function collect(connect, monitor) {
