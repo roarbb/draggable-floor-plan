@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Source from './Components/Source';
-import Target from './Components/Target';
+import Source from './Source.js';
+import Target from './Target';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import './App.css';
