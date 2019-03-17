@@ -16,7 +16,7 @@ class Table extends Component{
 
         return connectDropTarget(
             <div className={`target ${className}`}>
-                { floorPlan[id] === undefined ? '❖' : floorPlan[id] }
+                { floorPlan[id] === undefined ? '🆓' : floorPlan[id] }
             </div>
         )
     }

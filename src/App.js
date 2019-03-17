@@ -14,6 +14,7 @@ class FloorPlan extends Component {
       numberOfTables: 5,
     }
     this.onDrop = this.onDrop.bind(this);
+    this.onFloorPlanLoad = this.onFloorPlanLoad.bind(this);
   }
 
   onDrop(item) {
@@ -44,15 +45,38 @@ class FloorPlan extends Component {
     return tables
   }
 
+  renderPlanLoaders() {
+    const plans = [
+      { floorPlan: { 0: "🐸", 4: "🐼" } },
+      { floorPlan: { 0: "🦊", 1: "🐼", 2: "🐸" } },
+      { floorPlan: { 2: "🦊", 4: "🐼", 1: "🐸" } },
+    ]
+
+    return plans.map(
+      (plan, index) => <button key={`plan${index}`} onClick={() => this.onFloorPlanLoad(plan)} >
+        Load plan {index}
+      </button>
+    )
+  }
+
+  onFloorPlanLoad(plan) {
+    this.setState(plan)
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="source">
-          <Person name="🦊 Matej" id="🦊" />
-          <Person name="🐼 Bruce" id="🐼" />
-          <Person name="🐸 Sam" id="🐸" />
+      <div>
+        <div className="App">
+          <div className="source">
+            <Person name="🦊 Matej" id="🦊" />
+            <Person name="🐼 Bruce" id="🐼" />
+            <Person name="🐸 Sam" id="🐸" />
+          </div>
+          {this.renderTables()}
         </div>
-        {this.renderTables()}
+        <div className="planLoaders">
+          {this.renderPlanLoaders()}
+        </div>
       </div>
     );
   }
