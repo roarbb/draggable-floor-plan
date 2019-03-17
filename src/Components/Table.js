@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { DropTarget } from 'react-dnd';
-import './target.css';
+import './Table.css';
 
-class Target extends Component{
+class Table extends Component{
     render(){
-        const { isOver, canDrop, connectDropTarget, droppedItem, id } = this.props;
+        const { isOver, canDrop, connectDropTarget, floorPlan, id } = this.props;
         let className = "";
         if(isOver && canDrop){
             className = 'green';
@@ -14,11 +14,9 @@ class Target extends Component{
             className = 'red'
         }
 
-        const name = droppedItem[id] === undefined ? '❖' : droppedItem[id]
-
         return connectDropTarget(
             <div className={`target ${className}`}>
-                { name }
+                { floorPlan[id] === undefined ? '❖' : floorPlan[id] }
             </div>
         )
     }
@@ -39,4 +37,4 @@ function collect(connect, monitor) {
   };
 }
 
-export default DropTarget("SOURCE", spec, collect)(Target);
+export default DropTarget("SOURCE", spec, collect)(Table);

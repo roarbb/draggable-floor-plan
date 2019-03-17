@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import Source from './Components/Source';
-import Target from './Components/Target';
+import Person from './Components/Person';
+import Table from './Components/Table';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import './App.css';
 import _ from 'lodash';
 
-class Container extends Component {
+class FloorPlan extends Component {
   constructor() {
     super();
     this.state = {
-      droppedItem: {},
+      floorPlan: {},
       numberOfTables: 5,
     }
     this.onDrop = this.onDrop.bind(this);
@@ -18,10 +18,10 @@ class Container extends Component {
 
   onDrop(item) {
     this.setState(state => {
-      let droppedItem = _.omitBy(state.droppedItem, i => i === item.item);
-      droppedItem[item.id] = item.item;
+      let floorPlan = _.omitBy(state.floorPlan, i => i === item.item);
+      floorPlan[item.id] = item.item;
 
-      state.droppedItem = droppedItem;
+      state.floorPlan = floorPlan;
 
       return state;
     })
@@ -33,9 +33,9 @@ class Container extends Component {
     for (let index = 0; index < this.state.numberOfTables; index++) {
       tables.push(
         <div className="destination" key={`table-${index}`}>
-          <Target
+          <Table
             id={index}
-            droppedItem={this.state.droppedItem}
+            floorPlan={this.state.floorPlan}
             onDrop={this.onDrop} />
         </div>
       )
@@ -48,9 +48,9 @@ class Container extends Component {
     return (
       <div className="App">
         <div className="source">
-          <Source name="🦊 Matej" id="🦊" />
-          <Source name="🐼 Bruce" id="🐼" />
-          <Source name="🐸 Sam" id="🐸" />
+          <Person name="🦊 Matej" id="🦊" />
+          <Person name="🐼 Bruce" id="🐼" />
+          <Person name="🐸 Sam" id="🐸" />
         </div>
         {this.renderTables()}
       </div>
@@ -58,4 +58,4 @@ class Container extends Component {
   }
 }
 
-export default DragDropContext(HTML5Backend)(Container);
+export default DragDropContext(HTML5Backend)(FloorPlan);

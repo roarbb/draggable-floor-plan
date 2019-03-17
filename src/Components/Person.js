@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { DragSource } from 'react-dnd';
-import './source.css';
+import './Person.css';
 
-class Source extends Component{
+class Person extends Component{
   render(){
     const { name, connectDragSource } = this.props;
     return connectDragSource(
@@ -26,4 +26,4 @@ const cardSource = {
     }
 };
 
-export default DragSource("SOURCE", cardSource, collect)(Source);
+export default DragSource("SOURCE", cardSource, collect)(Person);
