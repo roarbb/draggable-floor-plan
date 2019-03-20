@@ -4,8 +4,8 @@ import './FloorPlanTemplate.css';
 class FloorPlanTemplate extends Component{
   render(){
     return (
-      <div className="FloorPlanTemplate">
-        FloorPlanTemplate
+      <div className="floor">
+        <div className="hole"></div>
       </div>
     )
   }
