@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import './FloorPlanTemplate.css';
-
-function Table(props) {
-  const orientation = props.orientation || 'horizontal';
-
-  return <div className={`table ${orientation}`} />;
-}
+import Table from './floor-plan/Table'
 
 class FloorPlanTemplate extends Component {
   render() {
@@ -13,7 +8,9 @@ class FloorPlanTemplate extends Component {
       <div className="grid">
         <div className="floor">
           <div className="hole" />
-          <Table id="table-1" orientation="vertical" />
+          <Table id="table-1" vertical={true} position={[5, 5]} />
+          <Table id="table-2" vertical={true} position={[7, 5]} />
+          <Table id="table-3" vertical={false} position={[5, 9]} />
         </div>
       </div>
     )

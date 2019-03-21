@@ -1,0 +1,4 @@
+.table, .table .horizontal {
+  border: 2px solid var(--color1);
+  background: var(--color5);
+}
