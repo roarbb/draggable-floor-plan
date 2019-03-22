@@ -1,5 +1,4 @@
 import React from 'react';
-import './Table.css';
 
 function Table(props) {
   const position = props.position || [1, 1];
