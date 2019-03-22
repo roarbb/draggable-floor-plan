@@ -5,16 +5,16 @@ function Table(props) {
   let tableWidth = 4;
   let tableHeight = 2;
 
-  if(props.vertical) {
+  if(props.horizontal) {
     [tableHeight, tableWidth] = [tableWidth, tableHeight]
   }
 
   const style = {
-    'grid-column': `${position[0]} / span ${tableWidth}`,
-    'grid-row': `${position[1]} / span ${tableHeight}`,
+    'grid-column': `${position[0]} / span ${tableHeight}`,
+    'grid-row': `${position[1]} / span ${tableWidth}`,
   }
 
-  return <div className={`table`} id={props.id} style={style} />;
+  return <div className={`table`} id={`table-${props.id}`} style={style} />;
 }
 
 export default Table;
