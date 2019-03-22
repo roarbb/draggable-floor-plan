@@ -30,8 +30,8 @@ body {
 
 .hole {
   background: var(--color-primary);
-  grid-row: 1 / span 24;
-  grid-column: 17 / 35;
+  grid-row: 1 / span 22;
+  grid-column: 17 / span 19;
 }
 
 .table, .table .horizontal {
