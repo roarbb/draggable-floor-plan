@@ -1,5 +1,8 @@
 :root {
-  --floor-size: 800px;
+  --floor-size-xl: 800px;
+  --floor-size-l: 600px;
+  --floor-size-m: 400px;
+  --floor-size-s: 200px;
   --color-primary: #4f5d75;
   --color-secondary: #87bba2;
   --color-white: #f0f7ee;
@@ -13,10 +16,31 @@ body {
 .grid {
   display: grid;
   margin: 20px auto;
-  width: var(--floor-size);
-  height: var(--floor-size);
+  width: var(--floor-size-xl);
+  height: var(--floor-size-xl);
   grid-template-columns: repeat(50, 1fr);
   grid-template-rows: repeat(50, 1fr);
+}
+
+@media only screen and (max-width: 820px) {
+  .grid {
+    width: var(--floor-size-l);
+    height: var(--floor-size-l);
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .grid {
+    width: var(--floor-size-m);
+    height: var(--floor-size-m);
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .grid {
+    width: var(--floor-size-s);
+    height: var(--floor-size-s);
+  }
 }
 
 .floor {
