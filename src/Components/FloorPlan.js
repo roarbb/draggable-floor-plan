@@ -66,7 +66,7 @@ class FloorPlan extends Component {
 
   render() {
     return (
-      <div>
+      <div className="draggable-floor-plan">
         <div className="App">
           <div className="source">
             <Person name="🦊 Matej" id="🦊" />
@@ -79,7 +79,6 @@ class FloorPlan extends Component {
           {this.renderPlanLoaders()}
           <Link to="/template">Floor plan</Link>
         </div>
-        <hr/>
       </div>
     );
   }

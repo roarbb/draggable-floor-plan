@@ -11,7 +11,7 @@
 }
 
 html {
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
   box-sizing: border-box;
 }
 
@@ -63,12 +63,12 @@ html {
 }
 
 .floor {
-  border: var(--default-border-width) solid var(--color-primary);
   grid-row: 1 / span 40;
   grid-column: 1 / span 50;
   display: grid;
   grid-template-columns: repeat(50, 1fr);
   grid-template-rows: repeat(40, 1fr);
+  background-color: var(--color-white);
 }
 
 .hole {
@@ -90,18 +90,22 @@ html {
 
 .pod {
   border: var(--default-border-width) solid var(--color-primary);
+  border-right: 0;
+  border-bottom: 0;
   grid-column: 45 / -1;
   grid-row: 28 / -1;
 }
 
 .kitchen {
   border: var(--default-border-width) solid var(--color-primary);
+  border-right: 0;
   grid-column: 45 / -1;
   grid-row: 14 / span 14;
 }
 
 .toilet {
   border: var(--default-border-width) solid var(--color-primary);
+  border-left: 0;
   grid-column: 1 / span 7;
   grid-row: 12 / span 16;
 }
