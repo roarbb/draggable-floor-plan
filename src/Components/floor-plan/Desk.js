@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Table(props) {
+function Desk(props) {
   const position = props.position || [1, 1];
   let tableWidth = 4;
   let tableHeight = 2;
@@ -17,4 +17,4 @@ function Table(props) {
   return <div className={`table`} id={`table-${props.id}`} style={style} />;
 }
 
-export default Table;
+export default Desk;
