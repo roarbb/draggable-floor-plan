@@ -62,3 +62,14 @@ body {
   border: 2px solid var(--color-primary);
   background: var(--color-secondary);
 }
+
+.stairs {
+  grid-row: 12 / span 11;
+  grid-column: 29 / span 6;
+  display: grid;
+}
+
+.step {
+  border: solid var(--color-white);
+  border-width: 1px 5px;
+}

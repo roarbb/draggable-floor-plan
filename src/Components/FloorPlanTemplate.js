@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './FloorPlanTemplate.css';
 import Table from './floor-plan/Table'
+import Stairs from './floor-plan/Stairs'
 
 class FloorPlanTemplate extends Component {
   render() {
@@ -8,6 +9,8 @@ class FloorPlanTemplate extends Component {
       <div className="grid">
         <div className="floor">
           <div className="hole" />
+          <Stairs />
+
           <Table id="1" position={[3, 1]} />
           <Table id="2" position={[3, 5]} />
           <Table id="3" position={[5, 1]} />

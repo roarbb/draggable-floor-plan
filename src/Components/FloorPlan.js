@@ -5,6 +5,7 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import './FloorPlan.css';
 import _ from 'lodash';
+import { Link } from "react-router-dom";
 
 class FloorPlan extends Component {
   constructor() {
@@ -76,7 +77,9 @@ class FloorPlan extends Component {
         </div>
         <div className="planLoaders">
           {this.renderPlanLoaders()}
+          <Link to="/template">Floor plan</Link>
         </div>
+        <hr/>
       </div>
     );
   }
