@@ -14,7 +14,7 @@ function Desk(props) {
     'grid-row': `${position[1]} / span ${tableWidth}`,
   }
 
-  return <div className={`table`} id={`table-${props.id}`} style={style} />;
+  return <div className={`desk`} id={`desk-${props.id}`} style={style} />;
 }
 
 export default Desk;
