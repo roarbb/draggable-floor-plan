@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import FloorPlan from './Components/FloorPlan';
-import FloorPlanTemplate from './Components/FloorPlanTemplate'
+import FloorPlanTemplate from './Components/floor-plan/FloorPlanTemplate'
 import './App.css';
 
 function App() {
