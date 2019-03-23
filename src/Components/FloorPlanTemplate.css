@@ -65,8 +65,8 @@ html {
 }
 
 .stairs {
-  grid-row: 12 / span 11;
-  grid-column: 29 / span 6;
+  grid-row: 10 / span 13;
+  grid-column: 30 / span 5;
   display: grid;
 }
 

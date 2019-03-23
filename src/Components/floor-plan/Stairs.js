@@ -1,15 +1,15 @@
 import React from 'react';
 
 function Stairs(props) {
+  const numberOfStairs = 13;
+  const stairs = [];
+
+  for (let index = 0; index < numberOfStairs; index++) {
+    stairs.push(<div className="step" />)
+  }
+
   return <div className="stairs">
-    <div className="step" />
-    <div className="step" />
-    <div className="step" />
-    <div className="step" />
-    <div className="step" />
-    <div className="step" />
-    <div className="step" />
-    <div className="step" />
+    {stairs}
   </div>;
 }
 
