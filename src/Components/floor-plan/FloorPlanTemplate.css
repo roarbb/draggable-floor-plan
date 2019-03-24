@@ -49,6 +49,10 @@ html {
     width: var(--floor-size-m);
     height: var(--floor-size-m);
   }
+
+  .label {
+    font-size: .6em;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -59,6 +63,10 @@ html {
   .grid {
     width: var(--floor-size-s);
     height: var(--floor-size-s);
+  }
+
+  .label {
+    display: none;
   }
 }
 
@@ -103,9 +111,19 @@ html {
   grid-row: 14 / span 14;
 }
 
+.label {
+  color: var(--color-primary);
+}
+
 .toilet {
   border: var(--default-border-width) solid var(--color-primary);
   border-left: 0;
   grid-column: 1 / span 7;
   grid-row: 12 / span 16;
+}
+
+.room-with-label {
+  display: grid;
+  align-content: center;
+  padding: 5px;
 }
