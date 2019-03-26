@@ -9,18 +9,12 @@ class ApiExample extends Component {
   }
 
   componentDidMount() {
-    let url = 'https://api.bamboohr.com/api/gateway.php/switchmediaau/v1/employees/directory';
+    let url = 'http://localhost:5000/v1/employees/directory';
 
-    fetch(url, {
-      method: 'get',
-      headers: {
-        "Content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "authorization": "Basic [insert here]",
-      },
-    })
-    .then(json => json)
+    fetch(url)
+    .then(response => response.json())
     .then(function (data) {
-      console.log('Request succeeded with JSON response', data);
+      console.log(JSON.parse(JSON.stringify(data)))
     })
     .catch(function (error) {
       console.log('Request failed', error);
