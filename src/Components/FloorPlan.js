@@ -77,7 +77,8 @@ class FloorPlan extends Component {
         </div>
         <div className="planLoaders">
           {this.renderPlanLoaders()}
-          <Link to="/template">Floor plan</Link>
+          <Link to="/level1">Floor Level 1</Link>
+          {' '}<Link to="/level2">Floor Level 2</Link>
           {' '}<Link to="/api">API</Link>
         </div>
       </div>

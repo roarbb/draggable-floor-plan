@@ -6,7 +6,7 @@ import StandUpPod from './StandUpPod';
 import Kitchen from './Kitchen';
 import Toilet from './Toilet';
 
-function FloorPlanTemplate(props) {
+function FloorPlanLevel2(props) {
 
   return (
     <div className="grid">
@@ -91,5 +91,4 @@ function FloorPlanTemplate(props) {
   )
 }
 
-
-export default FloorPlanTemplate;
+export default FloorPlanLevel2;
