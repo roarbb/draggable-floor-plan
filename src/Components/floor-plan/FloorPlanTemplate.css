@@ -20,8 +20,8 @@ html {
   margin: 20px auto;
   width: var(--floor-size-xl);
   height: var(--floor-size-xl);
-  grid-template-columns: repeat(50, 1fr);
-  grid-template-rows: repeat(50, 1fr);
+  grid-template-columns: repeat(50, minmax(0, 1fr));
+  grid-template-rows: repeat(50, minmax(0, 1fr));
 }
 
 .desk, .desk .horizontal {
@@ -87,8 +87,8 @@ html {
   grid-row: 1 / span 40;
   grid-column: 1 / span 50;
   display: grid;
-  grid-template-columns: repeat(50, 1fr);
-  grid-template-rows: repeat(40, 1fr);
+  grid-template-columns: repeat(50, minmax(0, 1fr));
+  grid-template-rows: repeat(40, minmax(0, 1fr));
   background-color: var(--color-white);
 }
 
@@ -107,6 +107,10 @@ html {
 .step {
   border: solid var(--color-white);
   border-width: 1px var(--default-border-width);
+}
+
+.step.inverted {
+  border: solid var(--color-primary);
 }
 
 .pod {
@@ -131,8 +135,52 @@ html {
   grid-row: 12 / span 16;
 }
 
+.toilet#downstairs-west {
+  border: var(--default-border-width) solid var(--color-primary);
+  grid-column: 45 / -1;
+  grid-row: 16 / span 8;
+}
+
+.toilet#downstairs-north {
+  border: var(--default-border-width) solid var(--color-primary);
+  grid-column: 1 / span 7;
+  grid-row: 12 / span 13;
+}
+
+.downstairs-west {
+  border: var(--default-border-width) solid var(--color-primary);
+  grid-column: 36 / -1;
+  grid-row: 24 / -1;
+}
+
+.downstairs-east {
+  border: var(--default-border-width) solid var(--color-primary);
+  grid-column: 42 / -1;
+  grid-row: 1 / span 15;
+}
+
+.downstairs-north {
+  border: var(--default-border-width) solid var(--color-primary);
+  grid-column: 1 / span 16;
+  grid-row: 25 / -1;
+}
+
 .room-with-label {
   display: grid;
   align-content: center;
   padding: 5px;
+}
+
+.entrance {
+  border: var(--default-border-width) solid var(--color-primary);
+}
+
+.entrance#front-door {
+  grid-column: 22 / span 10;
+  grid-row: 1 / span 2;
+}
+
+.entrance#back-door {
+  grid-column: 20 / span 13;
+  grid-row: 39 / span 2;
 }
