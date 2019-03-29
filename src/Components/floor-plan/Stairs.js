@@ -5,7 +5,8 @@ function Stairs(props) {
   const stairs = [];
 
   for (let index = 0; index < numberOfStairs; index++) {
-    stairs.push(<div className={(props.inverted) ? "step inverted" : "step"} />)
+    stairs.push(<div key={`stair_${index}`}
+                     className={(props.inverted) ? "step inverted" : "step"} />)
   }
 
   return <div className="stairs">

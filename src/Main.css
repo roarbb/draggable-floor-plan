@@ -1,0 +1,54 @@
+.main-screen {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 50px auto;
+
+  grid-template-areas:
+    "search tabs"
+    "search floor";
+}
+
+.search-bar {
+  grid-area: search;
+  padding: 10px;
+}
+
+.floor-1 {
+  grid-area: floor;
+  background: wheat;
+}
+
+.floor-2 {
+  grid-area: floor;
+  background: wheat;
+}
+
+.tabs {
+  grid-area: tabs;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 150px 150px auto;
+}
+
+.tabs > span {
+  text-align: center;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.tab {
+  padding: 10px 20px;
+}
+
+.tab.highlighted {
+  background: wheat;
+}
+
+.ant-list-item-meta-description, .ant-badge-status {
+  white-space: nowrap;
+}

@@ -1,0 +1,930 @@
+[
+  {
+    "deskId": 1,
+    "floorLevel": 0,
+    "position": [
+      18,
+      2
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      197
+    ]
+  },
+  {
+    "deskId": 2,
+    "floorLevel": 0,
+    "position": [
+      3,
+      2
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      139
+    ]
+  },
+  {
+    "deskId": 3,
+    "floorLevel": 0,
+    "position": [
+      5,
+      2
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      107
+    ]
+  },
+  {
+    "deskId": 4,
+    "floorLevel": 0,
+    "position": [
+      3,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      11
+    ]
+  },
+  {
+    "deskId": 5,
+    "floorLevel": 0,
+    "position": [
+      5,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      162
+    ]
+  },
+  {
+    "deskId": 6,
+    "floorLevel": 0,
+    "position": [
+      11,
+      2
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 7,
+    "floorLevel": 0,
+    "position": [
+      13,
+      2
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      41
+    ]
+  },
+  {
+    "deskId": 8,
+    "floorLevel": 0,
+    "position": [
+      11,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      42
+    ]
+  },
+  {
+    "deskId": 9,
+    "floorLevel": 0,
+    "position": [
+      13,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      52
+    ]
+  },
+  {
+    "deskId": 10,
+    "floorLevel": 0,
+    "position": [
+      11,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      78
+    ]
+  },
+  {
+    "deskId": 11,
+    "floorLevel": 0,
+    "position": [
+      13,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      167
+    ]
+  },
+  {
+    "deskId": 12,
+    "floorLevel": 0,
+    "position": [
+      36,
+      2
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      4
+    ]
+  },
+  {
+    "deskId": 13,
+    "floorLevel": 0,
+    "position": [
+      38,
+      2
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      1
+    ]
+  },
+  {
+    "deskId": 14,
+    "floorLevel": 0,
+    "position": [
+      36,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      84
+    ]
+  },
+  {
+    "deskId": 15,
+    "floorLevel": 0,
+    "position": [
+      38,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      157
+    ]
+  },
+  {
+    "deskId": 16,
+    "floorLevel": 0,
+    "position": [
+      36,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      3
+    ]
+  },
+  {
+    "deskId": 17,
+    "floorLevel": 0,
+    "position": [
+      38,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 18,
+    "floorLevel": 0,
+    "position": [
+      11,
+      16
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      187
+    ]
+  },
+  {
+    "deskId": 19,
+    "floorLevel": 0,
+    "position": [
+      13,
+      16
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      93
+    ]
+  },
+  {
+    "deskId": 20,
+    "floorLevel": 0,
+    "position": [
+      11,
+      20
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      193
+    ]
+  },
+  {
+    "deskId": 21,
+    "floorLevel": 0,
+    "position": [
+      13,
+      20
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      98
+    ]
+  },
+  {
+    "deskId": 22,
+    "floorLevel": 1,
+    "position": [
+      3,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      58
+    ]
+  },
+  {
+    "deskId": 23,
+    "floorLevel": 1,
+    "position": [
+      5,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      18
+    ]
+  },
+  {
+    "deskId": 24,
+    "floorLevel": 1,
+    "position": [
+      3,
+      5
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      168
+    ]
+  },
+  {
+    "deskId": 25,
+    "floorLevel": 1,
+    "position": [
+      5,
+      5
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      138
+    ]
+  },
+  {
+    "deskId": 26,
+    "floorLevel": 1,
+    "position": [
+      11,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      178
+    ]
+  },
+  {
+    "deskId": 27,
+    "floorLevel": 1,
+    "position": [
+      13,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      110
+    ]
+  },
+  {
+    "deskId": 29,
+    "floorLevel": 1,
+    "position": [
+      13,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      152
+    ]
+  },
+  {
+    "deskId": 28,
+    "floorLevel": 1,
+    "position": [
+      11,
+      6
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 31,
+    "floorLevel": 1,
+    "position": [
+      13,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      6
+    ]
+  },
+  {
+    "deskId": 30,
+    "floorLevel": 1,
+    "position": [
+      11,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      119
+    ]
+  },
+  {
+    "deskId": 33,
+    "floorLevel": 1,
+    "position": [
+      13,
+      14
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      155
+    ]
+  },
+  {
+    "deskId": 32,
+    "floorLevel": 1,
+    "position": [
+      11,
+      14
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 35,
+    "floorLevel": 1,
+    "position": [
+      13,
+      18
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      195
+    ]
+  },
+  {
+    "deskId": 34,
+    "floorLevel": 1,
+    "position": [
+      11,
+      18
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      85
+    ]
+  },
+  {
+    "deskId": 36,
+    "floorLevel": 1,
+    "position": [
+      11,
+      22
+    ],
+    "horizontal": true,
+    "employeeIds": [
+      20
+    ]
+  },
+  {
+    "deskId": 54,
+    "floorLevel": 1,
+    "position": [
+      5,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      158
+    ]
+  },
+  {
+    "deskId": 55,
+    "floorLevel": 1,
+    "position": [
+      7,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 52,
+    "floorLevel": 1,
+    "position": [
+      5,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      151
+    ]
+  },
+  {
+    "deskId": 53,
+    "floorLevel": 1,
+    "position": [
+      7,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      120
+    ]
+  },
+  {
+    "deskId": 51,
+    "floorLevel": 1,
+    "position": [
+      5,
+      31
+    ],
+    "horizontal": true,
+    "employeeIds": [
+      83
+    ]
+  },
+  {
+    "deskId": 60,
+    "floorLevel": 1,
+    "position": [
+      12,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      81
+    ]
+  },
+  {
+    "deskId": 61,
+    "floorLevel": 1,
+    "position": [
+      14,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      196
+    ]
+  },
+  {
+    "deskId": 58,
+    "floorLevel": 1,
+    "position": [
+      12,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 59,
+    "floorLevel": 1,
+    "position": [
+      14,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 56,
+    "floorLevel": 1,
+    "position": [
+      12,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      29
+    ]
+  },
+  {
+    "deskId": 57,
+    "floorLevel": 1,
+    "position": [
+      14,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      149
+    ]
+  },
+  {
+    "deskId": 66,
+    "floorLevel": 1,
+    "position": [
+      21,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      122
+    ]
+  },
+  {
+    "deskId": 67,
+    "floorLevel": 1,
+    "position": [
+      23,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      184
+    ]
+  },
+  {
+    "deskId": 64,
+    "floorLevel": 1,
+    "position": [
+      21,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      182
+    ]
+  },
+  {
+    "deskId": 65,
+    "floorLevel": 1,
+    "position": [
+      23,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      92
+    ]
+  },
+  {
+    "deskId": 62,
+    "floorLevel": 1,
+    "position": [
+      21,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      124
+    ]
+  },
+  {
+    "deskId": 63,
+    "floorLevel": 1,
+    "position": [
+      23,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      95
+    ]
+  },
+  {
+    "deskId": 72,
+    "floorLevel": 1,
+    "position": [
+      30,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      46
+    ]
+  },
+  {
+    "deskId": 73,
+    "floorLevel": 1,
+    "position": [
+      32,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      179
+    ]
+  },
+  {
+    "deskId": 70,
+    "floorLevel": 1,
+    "position": [
+      30,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      79
+    ]
+  },
+  {
+    "deskId": 71,
+    "floorLevel": 1,
+    "position": [
+      32,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 68,
+    "floorLevel": 1,
+    "position": [
+      30,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      163
+    ]
+  },
+  {
+    "deskId": 69,
+    "floorLevel": 1,
+    "position": [
+      32,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      143
+    ]
+  },
+  {
+    "deskId": 78,
+    "floorLevel": 1,
+    "position": [
+      39,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      45
+    ]
+  },
+  {
+    "deskId": 79,
+    "floorLevel": 1,
+    "position": [
+      41,
+      37
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      146
+    ]
+  },
+  {
+    "deskId": 76,
+    "floorLevel": 1,
+    "position": [
+      39,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      174
+    ]
+  },
+  {
+    "deskId": 77,
+    "floorLevel": 1,
+    "position": [
+      41,
+      33
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      181
+    ]
+  },
+  {
+    "deskId": 74,
+    "floorLevel": 1,
+    "position": [
+      39,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      172
+    ]
+  },
+  {
+    "deskId": 75,
+    "floorLevel": 1,
+    "position": [
+      41,
+      29
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      22
+    ]
+  },
+  {
+    "deskId": 37,
+    "floorLevel": 1,
+    "position": [
+      38,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      147
+    ]
+  },
+  {
+    "deskId": 38,
+    "floorLevel": 1,
+    "position": [
+      40,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      118
+    ]
+  },
+  {
+    "deskId": 39,
+    "floorLevel": 1,
+    "position": [
+      38,
+      5
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      160
+    ]
+  },
+  {
+    "deskId": 40,
+    "floorLevel": 1,
+    "position": [
+      40,
+      5
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      105
+    ]
+  },
+  {
+    "deskId": 45,
+    "floorLevel": 1,
+    "position": [
+      38,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      19
+    ]
+  },
+  {
+    "deskId": 46,
+    "floorLevel": 1,
+    "position": [
+      40,
+      10
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 47,
+    "floorLevel": 1,
+    "position": [
+      38,
+      14
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 48,
+    "floorLevel": 1,
+    "position": [
+      40,
+      14
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      177
+    ]
+  },
+  {
+    "deskId": 49,
+    "floorLevel": 1,
+    "position": [
+      38,
+      18
+    ],
+    "horizontal": false,
+    "employeeIds": []
+  },
+  {
+    "deskId": 50,
+    "floorLevel": 1,
+    "position": [
+      40,
+      18
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      116
+    ]
+  },
+  {
+    "deskId": 41,
+    "floorLevel": 1,
+    "position": [
+      45,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      141
+    ]
+  },
+  {
+    "deskId": 42,
+    "floorLevel": 1,
+    "position": [
+      47,
+      1
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      54,
+      180
+    ]
+  },
+  {
+    "deskId": 43,
+    "floorLevel": 1,
+    "position": [
+      45,
+      5
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      159
+    ]
+  },
+  {
+    "deskId": 44,
+    "floorLevel": 1,
+    "position": [
+      47,
+      5
+    ],
+    "horizontal": false,
+    "employeeIds": [
+      170,
+      61
+    ]
+  }
+]
