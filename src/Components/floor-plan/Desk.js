@@ -8,7 +8,7 @@ class Desk extends React.Component {
     super(props);
     this.position = props.position || [1, 1];
 
-    if(this.props.horizontal) {
+    if (this.props.horizontal) {
       this.tableWidth = 2;
       this.tableHeight = 4;
     } else {
@@ -17,22 +17,28 @@ class Desk extends React.Component {
     }
 
     this.style = {
-        'gridColumn': `${this.position[0]} / span ${this.tableHeight}`,
-        'gridRow': `${this.position[1]} / span ${this.tableWidth}`,
+      'gridColumn': `${this.position[0]} / span ${this.tableHeight}`,
+      'gridRow': `${this.position[1]} / span ${this.tableWidth}`,
     };
 
     this.state = {
-        isModalVisible: false,
-        currentEmployee: null
+      isModalVisible: false,
+      currentEmployee: null
     };
   }
 
   render() {
     const employees = this.props.employees;
-    const employeesImage = employees.map((em, idx) => <Avatar
-        key={`avatar_${idx}`}
-        onClick={() => this.showModal(em)}
-        src={em.photoUrl}/>);
+    const employeesImage = employees.map(employee => {
+      if (employee === undefined) {
+        return [];
+      }
+
+      return <Avatar
+        key={`avatar_${employee.id}`}
+        onClick={() => this.showModal(employee)}
+        src={employee.photoUrl} />
+    });
 
     const className = ['desk'];
     if (this.props.markedDesks.includes(this.props.id)) {
@@ -40,35 +46,35 @@ class Desk extends React.Component {
     }
 
     return <div className={className.join(' ')} id={`desk-${this.props.id}`} style={this.style} >
-                <div>{employeesImage}</div>
-                <AvartarModal employee={this.state.currentEmployee}
-                              isModalVisible={this.state.isModalVisible}
-                              handleOk={this.handleOk}
-                              handleCancel={this.handleCancel}
-                />
-            </div>;
+      <div className="clickable">{employeesImage}</div>
+      <AvartarModal employee={this.state.currentEmployee}
+        isModalVisible={this.state.isModalVisible}
+        handleOk={this.handleOk}
+        handleCancel={this.handleCancel}
+      />
+    </div>;
   }
 
-    showModal = (em) => {
-        this.setState({
-            currentEmployee: em,
-            isModalVisible: true,
-        });
-    };
+  showModal = (em) => {
+    this.setState({
+      currentEmployee: em,
+      isModalVisible: true,
+    });
+  };
 
-    handleOk = (e) => {
-        this.setState({
-            currentEmployee: null,
-            isModalVisible: false,
-        });
-    };
+  handleOk = (e) => {
+    this.setState({
+      currentEmployee: null,
+      isModalVisible: false,
+    });
+  };
 
-    handleCancel = (e) => {
-        this.setState({
-            currentEmployee: null,
-            isModalVisible: false,
-        });
-    };
+  handleCancel = (e) => {
+    this.setState({
+      currentEmployee: null,
+      isModalVisible: false,
+    });
+  };
 }
 
 export default Desk;

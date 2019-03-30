@@ -24,7 +24,7 @@ class FloorPlanLevel2 extends React.Component {
             <div className="grid">
                 <div className="floor">
                     <div className="hole" />
-                    <Stairs />
+                    <Stairs onClick={this.props.onFloorChangeClick}/>
                     <Printer className="printer-icon-upstaire" />
                     <StandUpPod />
                     <Kitchen />

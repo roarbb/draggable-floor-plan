@@ -9,7 +9,7 @@ function Stairs(props) {
                      className={(props.inverted) ? "step inverted" : "step"} />)
   }
 
-  return <div className="stairs">
+  return <div className="stairs clickable" onClick={props.onClick}>
     {stairs}
   </div>;
 }

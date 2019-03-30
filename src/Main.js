@@ -89,8 +89,8 @@ class Main extends Component {
             className={this.state.tab === 'floor2' ? `tab highlighted` : `tab`}
             onClick={() => this.onTabClick('floor2')}>1st Floor</span>
         </div>
-        <div className={this.state.tab === 'floor1' ? `floor-1` : `floor-1 hidden`}><Floor1 markedDesks={this.state.markedDesks} /></div>
-        <div className={this.state.tab === 'floor2' ? `floor-2` : `floor-2 hidden`}><Floor2 markedDesks={this.state.markedDesks} /></div>
+        <div className={this.state.tab === 'floor1' ? `floor-1` : `floor-1 hidden`}><Floor1 onFloorChangeClick={() => this.onTabClick("floor2")} markedDesks={this.state.markedDesks} /></div>
+        <div className={this.state.tab === 'floor2' ? `floor-2` : `floor-2 hidden`}><Floor2 onFloorChangeClick={() => this.onTabClick("floor1")} markedDesks={this.state.markedDesks} /></div>
     </div>
   )}
 }

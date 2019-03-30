@@ -28,23 +28,32 @@ html {
   display: grid;
   justify-items: center;
   align-items: center;
-  border: calc(var(--default-border-width) / 4) solid var(--color-desk-border);
-  background-image: url("../../assets/Images/wood.jpg");
+  border: calc(var(--default-border-width) / 3) solid var(--color-white);
+  background: url("../../assets/Images/wood-vertical.jpg");
+  background-size: cover;
 }
 
 .desk.highlighted {
-  background: yellow;
+  background: yellow url("../../assets/Images/wood-pattern.png");
 }
+
+.desk.highlighted span.ant-avatar {
+  border: 2px solid var(--color-white);
+}
+
 .modal-grid{
   display: grid;
   grid-auto-flow: column;
 }
+
 .bold {
   font-weight: bold;
 }
+
 .headshot img {
   border-radius: 50%;
 }
+
 .label {
   color: var(--color-primary);
   font-weight: bold;

@@ -52,3 +52,7 @@
 .ant-list-item-meta-description, .ant-badge-status {
   white-space: nowrap;
 }
+
+.clickable {
+  cursor: pointer;
+}
